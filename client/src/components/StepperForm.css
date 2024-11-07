@@ -1,0 +1,163 @@
+/* StepperForm.css */
+
+/* Main Stepper Form Container */
+.stepper-form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Stepper and Form Content */
+.stepper-and-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-width: 600px;  /* Ensure good size on small screens */
+}
+
+/* Stepper Container */
+.stepper-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Stepper Navigation */
+.stepper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stepper div {
+  /* background-color: #f1f1f1; */
+  padding: 10px 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stepper div.active {
+
+  color: white;
+  transform: scale(1.1);
+}
+
+.stepper div:hover {
+  transform: scale(1.1);
+}
+
+/* Form Content */
+.form-content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Summary Panel */
+.order-summary {
+  width: 28%;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.order-summary:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-summary h3 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.summary-item {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+/* Go to Payment Button */
+.go-to-payment-btn {
+  background-color: #226FED;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.go-to-payment-btn:hover {
+  background-color: #282876;
+  transform: translateY(-2px);
+  color: white;
+}
+
+.go-to-payment-btn:active {
+  transform: translateY(0);
+}
+
+/* Back Button */
+.go-back-btn {
+  background-color: #226FED;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.go-back-btn:hover {
+  background-color: #226FED;
+  transform: translateY(-2px);
+  color: white;
+}
+
+.go-back-btn:active {
+  transform: translateY(0);
+}
+
+/* Remove navigation buttons styles */
+.navigation-buttons {
+  display: none;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .stepper-form-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .stepper-and-form {
+    width: 100%;
+  }
+
+  .order-summary {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .go-to-payment-btn, .go-back-btn {
+    width: auto; /* Allow buttons to be smaller on mobile */
+  }
+}

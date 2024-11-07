@@ -1,0 +1,160 @@
+/* Overviewing.css */
+.mainpricing {
+    padding: 40px;
+    text-align: center;
+}
+
+.mainpricing h1 {
+    font-size: 2.5em;
+    color:#282876;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Add this rule to control the size of the map image */
+#map {
+    width: 30vw; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+#p{
+    color: #8181AC;
+}
+h4{
+    color: #282876;
+    font-size: 2rem;
+}
+
+.mainone {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.maino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mleft, .mright {
+    flex: 1;
+    padding: 10px;
+}
+
+.mleft h4 {
+    font-size: 2rem;
+    color: #282876;
+    margin-bottom: 15px;
+}
+
+.mleft p {
+    font-size: 1em;
+    color: #8181AC;
+    line-height: 1.6;
+}
+
+.mright img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.maino:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .mainpricing h1 {
+        font-size: 2.2em;
+    }
+
+    .mleft h4 {
+        font-size: 1.4em;
+    }
+
+    .maino {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    #mleftimg {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainone {
+        gap: 20px;
+    }
+
+    .maino {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mainpricing h1 {
+        font-size: 2em;
+    }
+
+    .mleft h4 {
+        font-size: 1.3em;
+    }
+
+    .mleft p {
+        font-size: 0.95em;
+    }
+
+    #mleftimg {
+        width: 90vw;
+    }
+}
+
+/* Final Adjustments for Small Screens */
+@media (max-width: 480px) {
+    .mainpricing {
+        padding: 20px;
+    }
+
+    .mainpricing h1 {
+        font-size: 1.8em;
+    }
+
+    .maino {
+        padding: 15px;
+    }
+
+    .mleft h4 {
+        font-size: 1.2em;
+    }
+
+    .mleft p {
+        font-size: 0.9em;
+    }
+
+    #mleftimg {
+        width: 90vw;
+    }
+}

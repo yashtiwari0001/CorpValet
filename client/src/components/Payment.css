@@ -1,0 +1,72 @@
+/* Payment.css */
+
+/* Main Form Container */
+.payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading */
+  .payment-heading {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    background-color: #226FED;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Button Hover Effect */
+  .submit-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Loading Spinner (optional) */
+  .submit-button:disabled::after {
+    content: " ...";
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  /* Small screen responsiveness */
+  @media (max-width: 768px) {
+    .payment-form {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .payment-heading {
+      font-size: 1.6rem;
+    }
+  
+    .submit-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+/* Success.css */
+#success-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .success-container h1 {
+    font-size: 2em;
+    color: #282876; /* Green color to signify success */
+  }
+  
+  .success-container p {
+    font-size: 1.2em;
+    color: #8181AC; /* Darker text for the message */
+  }
+  
+  .success-container .MuiButton-containedPrimary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  .buts:hover{
+    background-color:#282876;
+    color: white;
+  }
+  

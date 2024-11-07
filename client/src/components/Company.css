@@ -1,0 +1,106 @@
+/* Company.css */
+.h2 {
+  color: #282876;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.corpvalet {
+  font-weight: bolder;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.marquee-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.image {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .h2 {
+    font-size: 1.8rem;
+    top: 40px;
+  }
+
+  .image {
+    width: 120px;
+    height: 80px;
+    margin: 0 10px;
+  }
+
+  .marquee-inner {
+    animation-duration: 18s;
+  }
+}
+
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 1.5rem;
+    top: 30px;
+    padding: 0.5rem;
+  }
+
+  .marquee {
+    margin-top: 60px;
+  }
+
+  .image {
+    width: 100px;
+    height: 70px;
+    margin: 0 8px;
+  }
+
+  .marquee-inner {
+    animation-duration: 15s;
+  }
+}
+
+@media (max-width: 480px) {
+  .h2 {
+    font-size: 1.2rem;
+    top: 20px;
+    padding: 0.5rem;
+  }
+
+  .marquee {
+    margin-top: 50px;
+  }
+
+  .image {
+    width: 80px;
+    height: 60px;
+    margin: 0 5px;
+  }
+
+  .marquee-inner {
+    animation-duration: 12s;
+  }
+}

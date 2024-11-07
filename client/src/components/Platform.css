@@ -1,0 +1,95 @@
+/* Platform.css */
+.platform {
+    padding: 20px;
+    text-align: center;
+}
+
+.platform h1 {
+    font-size: 2.5em;
+    color: #282876;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Space between grid items */
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(255, 255, 255,0.1);
+    padding: 100px; /* Larger padding for bigger boxes */
+    min-height: 300px; /* Increased minimum height */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-sub:hover {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background-color: #e6f3ff;
+}
+
+.grid-sub img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.grid-sub:hover img {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.grid-sub h3 {
+    font-size: 1.3em;
+    color:#282876;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.grid-sub p {
+    font-size: 1em;
+    color: #8181AC;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.grid-sub:hover h3, 
+.grid-sub:hover p {
+    color:#282876;
+}
+
+/* Fade-in effect for the heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .gridbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridbox {
+        grid-template-columns: 1fr;
+    }
+}

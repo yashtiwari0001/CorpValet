@@ -1,0 +1,185 @@
+/* OrderDetails.css */
+
+/* General styles for the form container */
+.order-details-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.order-details-container:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section Heading */
+.formheading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #282876;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding-left: 10px;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #282876;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+/* Form input fields */
+.form-input {
+  margin-bottom: 1.5rem;
+}
+
+/* Input field general styles */
+.MuiTextField-root, .MuiFormControl-root, .MuiSelect-root {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Input fields' focus state */
+.MuiTextField-root input:focus, .MuiSelect-root:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Styling for the text area */
+textarea.form-input {
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  resize: vertical;
+  margin-top: 1em;
+  transition: border-color 0.3s ease;
+}
+
+textarea.form-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Select menu styles */
+.MuiSelect-root {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.MuiSelect-root:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Button styling */
+#submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #282876;
+}
+
+#submit-button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+/* Circular Progress for loading state */
+.MuiCircularProgress-root {
+  color: white;
+}
+
+/* Success and error messages */
+p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+p.green {
+  color: #282876;
+}
+
+p.red {
+  color: #282876;
+}
+
+/* Error message styling */
+.MuiFormHelperText-root {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .order-details-container {
+    padding: 1.5rem;
+  }
+
+  .formheading {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .MuiTextField-root,
+  .MuiFormControl-root,
+  .MuiSelect-root,
+  textarea.form-input {
+    font-size: 1rem;
+  }
+
+  #submit-button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-details-container {
+    padding: 1rem;
+  }
+
+  .formheading {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .MuiTextField-root,
+  .MuiFormControl-root,
+  .MuiSelect-root,
+  textarea.form-input {
+    font-size: 0.9rem;
+  }
+
+  #submit-button {
+    font-size: 1rem;
+  }
+}
