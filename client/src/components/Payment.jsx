@@ -20,7 +20,7 @@ const Payment = ({ calculateTotal }) => {
 
     try {
       // Call backend to create a Checkout session
-      const { data } = await axios.post('http://localhost:3000/create-checkout-session', { totalCost: totalAmount });
+      const { data } = await axios.post('https://corpvalet-backend.onrender.com/create-checkout-session', { totalCost: totalAmount });
       const { sessionId } = data;
 
       if (!sessionId) {
