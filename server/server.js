@@ -28,7 +28,7 @@ app.post('/create-checkout-session', async (req, res) => {
       ],
       mode: 'payment',
       success_url: 'http://localhost:5173/success',
-      cancel_url: 'https://dashing-sunshine-90bae6.netlify.app/cancel',
+      cancel_url: 'http://localhost:5173/cancel',
     });
 
     // Send session ID to the frontend
