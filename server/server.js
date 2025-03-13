@@ -5,7 +5,7 @@ import cors from 'cors';
 const stripe = new Stripe('sk_test_51QIG0NGO7ICWsLJTIOU1olnsTdvC42RVmE3gxAta4E0XX16J4snmLQgvtSGoR0LoAcXaTjzhSzZ7Hoe3fmSI7tvk00By5YAVn0');
 
 const app = express();
-app.use(cors({ origin: 'https://beautiful-snickerdoodle-536c1d.netlify.app', optionsSuccessStatus: 200 }));
+app.use(cors({ origin: 'https://dashing-sunshine-90bae6.netlify.app', optionsSuccessStatus: 200 }));
 app.use(express.json());
 
 app.post('/create-checkout-session', async (req, res) => {
@@ -27,8 +27,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'https://beautiful-snickerdoodle-536c1d.netlify.app/success',
-      cancel_url: 'https://beautiful-snickerdoodle-536c1d.netlify.app/cancel',
+      success_url: 'https://dashing-sunshine-90bae6.netlify.app/success',
+      cancel_url: 'https://dashing-sunshine-90bae6.netlify.app/cancel',
     });
 
     // Send session ID to the frontend
